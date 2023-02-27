@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add Review</h1>
+    <!-- <form action="#" data-th-action="@{/review}" method="post"> -->
+    <form action="/review" method="post">
+        <!-- <input type="hidden" name="gameId" data-th-value="${game.gid}"> -->
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" name="user" size="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Rating:</td>
+                <td>
+                    <select name="rating" required>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Comment: </td>
+                <td>
+                    <textarea name="comment"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Game Id:</td>
+                <td>
+                    <input type="text" name="gameId" size="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">submit</button></td>
+            </tr>
+            
+
+        </table>
+
+
+
+
+    </form>
+</body>
+</html>
